@@ -1,6 +1,6 @@
 import React from 'react'
-import Home from './Home'
-import QueryContainer from './QueryContainer'
+
+
 
 function App() {
   return (
@@ -15,17 +15,27 @@ function App() {
        <h1>Heat Pro</h1>
       </div>
 
-      <div className="main">
-        <Home />
-      </div>
+      <div className="bio">
+      <h3>Heat Pump spec finder</h3>
+    </div>
      
-      <div>
-        <QueryContainer />
+    
+      <div className="form-container">
+        <span>
+          <input className="item-input"></input>
+          <button className="add">Add</button>
+        </span>
       </div>
+    
+    <div className='info-containers'>
+          <div className="info-container1">
+            <h3>Info about heat pumps 1</h3> 
+          </div> 
 
-      <div>
-       <h1>heat pump table</h1> 
-      </div>      
+       <div className="info-container2">
+        <h3>Info about heat pumps 2</h3> 
+       </div>  
+    </div>
     </>
   )
 }
