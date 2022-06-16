@@ -1,20 +1,31 @@
 import React from 'react'
-
-import Nav from './Nav'
 import Home from './Home'
+import QueryContainer from './QueryContainer'
 
 function App() {
   return (
     <>
-      <div className="title">
-        <img src="/images/color_earth.gif" alt="A coloured globe of the earth spinning around on its axis"/>
-        <h1>Navigating the worldwide routes</h1>
+    {/* logo at top of page */}
+    <div>
+    <img className="logo" src="/images/r1-heat.png" alt="A coloured globe of the earth spinning around on its axis"/>
+    </div>
+
+
+     <div className="title">
+       <h1>Heat Pro</h1>
       </div>
-      {/* This 'main' div is only for styling (so we can use flexbox) */}
+
       <div className="main">
-        <Nav />
         <Home />
       </div>
+     
+      <div>
+        <QueryContainer />
+      </div>
+
+      <div>
+       <h1>heat pump table</h1> 
+      </div>      
     </>
   )
 }
